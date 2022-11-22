@@ -2,26 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
-## Development server
+## Improvements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Given more time I would have implemented some end to end/ integration testing to ensure that when the button is clicked the endpoint is called and the correct values are returned.
 
-## Code scaffolding
+I would have also created a test to ensure that when a user sends a value outside of 1-100 a BadRequest is sent back, and the error is handled.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Finally, I perhaps would have used more styling around the button and placed the PrimeNumbers textbox, results and button in the centre of the page.
