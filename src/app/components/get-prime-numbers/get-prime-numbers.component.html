@@ -1,0 +1,31 @@
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="inner">
+                <h3>Prime Numbers</h3>
+                <label for="primeNumbersUpTo">Enter a number between 1 and 100:</label>
+                <input type="number" #primeNumbersUpTo name="primeNumbersUpTo">
+                <button (click)="loadPrimeNumbers(primeNumbersUpTo.valueAsNumber)"> Get Prime Numbers </button>
+                <ul *ngIf="ErrorMessage">
+                    <li *ngFor="let error of ErrorMessage">
+                       {{error}}
+                    </li>
+                 </ul>
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Primes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let primeNumber of PrimeNumbers">
+                     <td>{{primeNumber}}</td>
+                    </tr>
+                 </tbody>
+                </table>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
